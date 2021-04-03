@@ -6,6 +6,12 @@ div > p {
     text-align: justify;
 }
 
+.container { 
+    width: 550px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 body {
     background:#ddd;
     font-family:"Raleway";
@@ -78,6 +84,11 @@ body {
 .tabs .tab-content > div.con {
     position: relative;
 }
+
+.tabs .tab-content > div > i {
+    position: relative;
+}
+
 
 .tabs .tab-indicator {
     position:absolute;
