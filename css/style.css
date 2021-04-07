@@ -1,0 +1,258 @@
+/* ALL */
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.botao {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #32556e;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+
+/* HEADER */
+header {
+    background-image: url('../img/fundo5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+/* ABOUT */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 20px;
+    background-color: #32556e;
+    color: #f1f1f1;
+}
+
+#about p {
+    text-align: justify;
+    margin-bottom: 2.5em;
+    max-width: 700px;
+}
+
+#about .botao {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+}
+
+/* TECNOLOGIES */
+#tecnologies {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tecnologies div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#tecnologies div img {
+    width: 75px;
+    height: 75px;
+}
+
+/* PORTIFOLIO */
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#portfolio h2 {
+    margin-bottom: 20px;
+}
+
+#portfolio img {
+    width: 100%;
+}
+
+/* CONTACT */
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact div p a img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px) {
+    /* NAVIGATION */
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    
+    /*  HEADER */    
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    
+    /*ABOUT*/
+    #about {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    
+    /* TECNOLOGIES */
+    #tecnologies {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #tecnologies h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #tecnologies div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    
+    /* PORTFOLIO */
+    
+    #portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #portfolio h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #portfolio img {
+        width: 33.3333333333%; 
+    }
+
+    #contact img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* CONTACT */
+    
+    #contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    #contact h2,
+    #contact p {
+        width: 100%;
+    }
+    
+}

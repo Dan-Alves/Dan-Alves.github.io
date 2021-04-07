@@ -1,65 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Daniel Alves</title>
+    <!-- essa linha do charset não tava no vídeo! -->
+    <meta charset="utf-8">
+    <title>Curso de HTML5 e CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
+  
 <body>
-    <div class="tabs">
-        <div class="tab-header">
+    
+    <nav>
+        <a href="#">Daniel Alves</a>
+        <ul>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#tecnologies">TECNOLOGIAS</a></li>
+            <li><a href="#portfolio">PROJETOS</a></li>
+            <li><a href="#contact">CONTATO</a></li>
+        </ul>
+    </nav>
 
-            <div class="active">
-                <i class="fa fa-pencil-square"></i> Sobre
-            </div>
+    <header>
+        <h1>Daniel Alves</h1>
+        <p>Software Developer | Estudande de Ciência da Computação</p>
+        <a href="#about" class="botao">SOBRE MIM</a>
+    </header>
 
-            <div>
-                <i class="fa fa-bar-chart"></i> Projetos
-            </div>
+    <section id="about">
+        <h2>SOBRE</h2>
+        <p>Olá, meu nome é Daniel Alves, tenho 24 anos e sou estudande de Ciência da Computação. Atualmente, exploro a área de desenvolvimento utilizando Java e Javascript.</p>
+        <a href="#contact" class="botao">ENTRE EM CONTATO</a>
+    </section>
 
-            <div>
-                <i class="fa fa-envelope"></i> Contato
-            </div>
-
+    <section id="tecnologies">
+        <h2>TECNOLOGIAS</h2>
+        <div>
+            <img src="img/html.svg" alt="HTML5">
         </div>
+        <div>
+            <img src="img/css.svg" alt="CSS3">
+        </div>
+        <div>
+            <img src="img/js.svg" alt="Javascript">
+        </div>
+        <div>
+            <img src="img/java.svg" alt="Java">
+        </div>
+    </section>
 
-        <div class="tab-indicator"></div>
-        <div class="tab-content">
+    <section id="portfolio">
+        <h2>PROJETOS</h2>
+        <!-- <img src="" alt=""> -->
+    </section>
 
-            <div class="active">
-                <i class="fa fa-pencil-square"></i>
-                <h2>Daniel Santos Alves</h2>
-                <p>Olá, meu nome é Daniel Alves, tenho 24 anos e sou estudande de Ciência da Computação. Atualmente, exploro a área de desenvolvimento utilizando Java e Javascript. </p>
-            </div>         
-                        
-            <div class="container">
-                <i class="fa fa-bar-chart"></i>
-                <h2>Projetos</h2>
-                <a href="https://github.com/Dan-Alves" target="_blank">
-                    <img src="imgs/github.svg" alt="GitHub" /> 
-                </a>         
-            </div>
-            
-            <div class="con">
-                <i class="fa fa-envelope"></i>
-                <h2>Contatos</h2>
+    <section id="contact">
+        <h2>CONTATO</h2>
+        <div>
+            <p>
                 <a href="https://api.whatsapp.com/send?phone=5521995664548" target="_blank">
-                    <img src="imgs/whatsapp.svg" alt="WhatsApp" />
+                    <img src="img/whatsapp.svg" alt="Whatsapp">
                 </a>
-                <a href="https://www.linkedin.com/in/daniel-alves-2aa1b814a/" target="_blank">
-                    <img src="imgs/linkedin.svg" alt="Linkedin" />
-                </a>
-                <a href="https://twitter.com/AlvesDan28" target="_blank">
-                    <img src="imgs/twitter.svg" alt="Twitter" />
-                </a>
-            </div>
-          
+            </p>
         </div>
-    </div>
-    <script type="text/javascript" src="index.js"></script>
+
+        <div> 
+            <p>
+                <a href="mailto:danielalves@gmail.com">
+                    <img src="img/email.svg" alt="E-mail">
+                </a>
+            </p>
+        </div>
+
+        <div> 
+            <p>
+                <a href="https://twitter.com/AlvesDan28" target="_blank">
+                    <img src="img/twitter.svg" alt="Twitter">
+                </a>
+            </p>
+        </div>
+
+        <div> 
+            <p>
+                <a href="https://github.com/Dan-Alves" target="_blank">
+                    <img src="img/github.svg" alt="GitHub">
+                </a>
+            </p>
+        </div>
+
+        <div> 
+            <p>
+                <a href="https://www.linkedin.com/in/daniel-alves-2aa1b814a/" target="_blank">
+                    <img src="img/linkedin2.svg" alt="Linkedin">
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Design by Daniel Alves.</p>
+    </footer>
+    
 </body>
 </html>
