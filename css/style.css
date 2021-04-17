@@ -266,7 +266,7 @@ MEDIA QUERIES
     body {
         font-family: "Open Sans", Helvetica, Arial, sans-serif;
         color: #4d4d4d;
-        max-width: 400px;
+        /* max-width: 900px; */
         width: auto;
     }
 
@@ -367,18 +367,23 @@ MEDIA QUERIES
 
     /* TECNOLOGIES */
     #tecnologies {
-        padding: 30px;
+        /* padding: 30px; */
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-items: center;        
     }
 
     #tecnologies div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 30px;        
+        margin-left: 50px;
+    }
+
+    #tecnologies h2 {
+        text-align: center;
+        width: 100%;
     }
 
     #tecnologies div img {
@@ -405,7 +410,7 @@ MEDIA QUERIES
     /* CONTACT */
     #contact {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         text-align: center;
         padding: 20px;
@@ -415,9 +420,12 @@ MEDIA QUERIES
         text-align: center;
     }
 
-    #contact div p a img {
+    #contact div {
         display: flex;
         flex-direction: row;
+    }
+
+    #contact div p a img {
         align-items: center;
         text-align: center;
         margin: 10px;
